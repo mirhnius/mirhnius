@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  I build AI systems that are grounded, testable and safe to rely on: a quality-control tool for brain MRI,
-  a RAG pipeline that cites its sources, an agent that can't make up a number.
+  I make ML and AI systems you can rely on: reproducible, tested, and built end to end.
+  A quality-control tool for brain MRI, a RAG pipeline that cites its sources, an agent that can't make up a number.
 </p>
 
 <p align="center">
@@ -19,7 +19,9 @@
 
 ## About me
 
-I'm an AI engineer with a winding path. I started in **electrical engineering** (controllers, signal processing, even a pipelined ARM CPU), moved into **neuroimaging research**, and now build AI systems in **fintech**. The thread through all of it: making sure the results can be trusted, whether they come from a brain scan, a control loop or a language model.
+I'm an AI engineer with a winding path. I started in **electrical engineering** (controllers, signal processing, even a pipelined ARM CPU), moved into **neuroimaging research**, and now build AI systems in **fintech**. Along the way I've worked across data science, ML engineering, AI engineering and testing, with technical and non-technical people alike.
+
+What I care about most is the engineering side of machine learning: **reliable, reproducible models in production**, and end-to-end solutions that people can actually use and trust, whether the results come from a brain scan, a control loop or a language model.
 
 - 🔬 First author of [*Numerical Uncertainty in Linear Registration: An Experimental Study*](https://arxiv.org/abs/2508.00781), on how floating-point noise changes the results of MRI registration tools
 - 🧠 Google Summer of Code 2026 with [INCF](https://www.incf.org/), building [QC-Studio](https://github.com/nipoppy/qc-studio)
