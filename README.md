@@ -3,8 +3,8 @@
 </p>
 
 <p align="center">
-  I make ML and AI systems you can rely on: reproducible, tested, and built end to end.
-  A quality-control tool for brain MRI, a RAG pipeline that cites its sources, an agent that can't make up a number.
+  I make ML and AI systems you can rely on, from a quality-control tool for brain MRI to a RAG pipeline that cites its sources:
+  reproducible, tested, and built end to end.
 </p>
 
 <p align="center">
