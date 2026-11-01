@@ -172,9 +172,7 @@ def projects_page(originals):
 
 
 def starred_section(by_name):
-    lines = ["<!-- starred:start -->", "## Control systems and robotics", "",
-             "My earlier work was in control systems and robotics, in MATLAB and Simulink. "
-             "These are my most-starred repositories.", ""]
+    lines = ["<!-- starred:start -->", "## Starred projects", ""]
     for name, blurb in STARRED:
         r = by_name[name]
         lines.append(f"- **[{name}]({r['url']})** · ⭐ {r['stargazerCount']}<br>{blurb}")
