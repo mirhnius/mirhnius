@@ -1,59 +1,51 @@
-# Hi, I'm Niusha 👋
+<p align="center">
+  <img src="assets/banner.svg" alt="Niusha Mirhakimi, ML/AI engineer" width="100%">
+</p>
 
-I'm an **ML/AI engineer at McGill University**, working at the intersection of **neuroimaging, reproducible research, and LLM-based agents**. I like building systems that are grounded, testable, and safe to rely on, whether that's a quality-control tool for brain MRI, a RAG pipeline that cites its sources, or an agent that can't make up a number.
+<p align="center">
+  I build AI systems that are grounded, testable and safe to rely on: a quality-control tool for brain MRI,<br>
+  a RAG pipeline that cites its sources, an agent that can't make up a number.
+</p>
 
-- 🔬 **Research:** numerical stability of neuroimaging pipelines. First author of [*Numerical Uncertainty in Linear Registration: An Experimental Study*](https://arxiv.org/abs/2508.00781) (arXiv, 2025)
-- 🧠 **Google Summer of Code 2026** with [INCF](https://www.incf.org/), contributing to [QC-Studio](https://github.com/nipoppy/qc-studio). [Read my final report →](https://github.com/mirhnius/gsoc-qc-studio-report)
-- 🤖 **Currently exploring:** production RAG, agentic workflows, and how to test and secure coding agents
-- 🏛️ Member of [NeuroDataScience](https://github.com/neurodatascience)
+<p align="center">
+  <a href="https://arxiv.org/abs/2508.00781"><img src="https://img.shields.io/badge/arXiv-Paper-B31B1B?style=for-the-badge&logo=arxiv&logoColor=white" alt="Paper on arXiv"></a>
+  <a href="https://github.com/mirhnius/gsoc-qc-studio-report"><img src="https://img.shields.io/badge/GSoC_2026-Report-4285F4?style=for-the-badge" alt="GSoC 2026 report"></a>
+  <a href="PROJECTS.md"><img src="https://img.shields.io/badge/All_projects-%E2%86%92-6D28D9?style=for-the-badge" alt="All projects"></a>
+</p>
 
----
+<p align="center">
+  <img src="assets/stats.svg" alt="37 original repos, 14 stars, 13 merged PRs in 5 other projects, GSoC 2026" width="100%">
+</p>
 
-## Featured projects
+## About me
 
-| Project | What it is |
-|---|---|
-| [**practice_rag_production**](https://github.com/mirhnius/practice_rag_production) | A production-style agentic RAG system over arXiv papers: Docling PDF parsing, PostgreSQL, OpenSearch hybrid search (BM25 + vectors with Reciprocal Rank Fusion), a local LLM via Ollama, a LangGraph retrieval workflow, Redis caching and Langfuse tracing. |
-| [**mca_linear_registration**](https://github.com/mirhnius/mca_linear_registration) | Code for my paper on how floating-point noise affects linear MRI registration. Uses Monte-Carlo Arithmetic across SPM, FSL and ANTs. Being refactored from research scripts into a Python package. |
-| [**budget-buddy**](https://github.com/mirhnius/budget-buddy) | An AI budgeting agent built with Google ADK, Gemini and a custom MCP server. *Math in code, judgment in the LLM*: every number traces back to a deterministic tool call. Kaggle agents capstone. |
-| [**agentic_coding**](https://github.com/mirhnius/agentic_coding) | A 12-week course on building web software safely with a coding agent (Claude Code + GitHub): guardrails, CI, security review, testing, and shipping. |
-| [**gsoc-qc-studio-report**](https://github.com/mirhnius/gsoc-qc-studio-report) | My Google Summer of Code 2026 write-up: what I built, what I learned, and what's next for QC-Studio. |
-
-## Open-source contributions
-
-- **[nipoppy/qc-studio](https://github.com/nipoppy/qc-studio)** (GSoC 2026): a web app for quality control of neuroimaging data. I worked on the IQM (image quality metrics) viewer, a spec-driven Playwright end-to-end test suite, a fix for ratings being silently dropped, SVG montage caching, the project's first CI checks, and documentation.
-- **[masoomeshafiee/DB_management_agent](https://github.com/masoomeshafiee/DB_management_agent)**: a safe, agent-based LLM system for managing a SQLite lab database with natural language. Refactors and a roadmap doc.
-- **Reproducibility and annotation projects:** [LivingPark-MRI/zeighami-etal-2015](https://github.com/LivingPark-MRI/zeighami-etal-2015) and [litmining/labelbuddy-annotations](https://github.com/litmining/labelbuddy-annotations).
-
-## Most-starred repos
-
-Earlier engineering projects from 2021, built in MATLAB/Simulink:
-
-| Project | Stars |
-|---|---|
-| [Control-Magnetic-Levitation-System](https://github.com/mirhnius/Control-Magnetic-Levitation-System): stabilization and tracking of a magnetic levitation ball with PID controllers | ![stars](https://img.shields.io/github/stars/mirhnius/Control-Magnetic-Levitation-System?style=social) |
-| [Control-Position-Velocity-DC-Motor](https://github.com/mirhnius/Control-Position-Velocity-DC-Motor): DC motor position and velocity control with PID | ![stars](https://img.shields.io/github/stars/mirhnius/Control-Position-Velocity-DC-Motor?style=social) |
-| [OpenmanipulatorX-Robot](https://github.com/mirhnius/OpenmanipulatorX-Robot): tracking control analysis of the OpenManipulator-X arm | ![stars](https://img.shields.io/github/stars/mirhnius/OpenmanipulatorX-Robot?style=social) |
-| [Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation): position control of a two-degree-of-freedom arm in Simulink | ![stars](https://img.shields.io/github/stars/mirhnius/Robotic-Arm-Simulation?style=social) |
-
-<details>
-<summary><b>More from my earlier projects</b></summary>
-
-<br>
-
-**Signal processing:** [My-Shazam](https://github.com/mirhnius/My-Shazam) (music search engine), [DTMF-Signals-Processing](https://github.com/mirhnius/DTMF-Signals-Processing), [Communication-Modulations](https://github.com/mirhnius/Communication-Modulations), [Extraction-Components-Electroencephalography-Signal](https://github.com/mirhnius/Extraction-Components-Electroencephalography-Signal)
-
-**Machine learning and statistics:** [Classification-Gender-Voice-Recognition](https://github.com/mirhnius/Classification-Gender-Voice-Recognition), [Facial-Landmarks-Detection](https://github.com/mirhnius/Facial-Landmarks-Detection), [Fit-Comparison-Behavioral-Models](https://github.com/mirhnius/Fit-Comparison-Behavioral-Models), [Statistical-Analysis](https://github.com/mirhnius/Statistical-Analysis), [Basic-Statistics](https://github.com/mirhnius/Basic-Statistics), [Optimization-Electricity-Dispatching](https://github.com/mirhnius/Optimization-Electricity-Dispatching)
-
-**Control and robotics:** [Control-Ball-and-Beam-System](https://github.com/mirhnius/Control-Ball-and-Beam-System), [Robotic-Finger-Gesture-Emulation](https://github.com/mirhnius/Robotic-Finger-Gesture-Emulation)
-
-**Software and embedded:** [Local-Messenger](https://github.com/mirhnius/Local-Messenger), [Pacman-Game](https://github.com/mirhnius/Pacman-Game), [Restaurant-Orders-Management-App](https://github.com/mirhnius/Restaurant-Orders-Management-App), [ARM-Frequency-Meter](https://github.com/mirhnius/ARM-Frequency-Meter), [Piplined-ARM](https://github.com/mirhnius/Piplined-ARM)
-
-</details>
+- 🔬 First author of [*Numerical Uncertainty in Linear Registration: An Experimental Study*](https://arxiv.org/abs/2508.00781), on how floating-point noise changes the results of MRI registration tools
+- 🧠 Google Summer of Code 2026 with [INCF](https://www.incf.org/), building [QC-Studio](https://github.com/nipoppy/qc-studio)
+- 🤖 Exploring production RAG, agentic workflows, and how to test and secure coding agents
 
 ## Toolbox
 
-**Languages:** Python · MATLAB · C / C++ · R · Shell
-**AI and data:** RAG · LangGraph · Google ADK · MCP · Ollama · PostgreSQL · OpenSearch · Redis · Jupyter
-**Engineering:** Docker · GitHub Actions / CI · Playwright · Langfuse
-**Domain:** neuroimaging (BIDS, MRI registration, quality control) · numerical reproducibility
+<p>
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/MATLAB-E16737?style=flat-square" alt="MATLAB">
+  <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++">
+  <img src="https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white" alt="R">
+  <img src="https://img.shields.io/badge/Shell-4EAA25?style=flat-square&logo=gnubash&logoColor=white" alt="Shell">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/LangGraph-1C3C3C?style=flat-square&logo=langchain&logoColor=white" alt="LangGraph">
+  <img src="https://img.shields.io/badge/Google_ADK-8E75B2?style=flat-square&logo=googlegemini&logoColor=white" alt="Google ADK">
+  <img src="https://img.shields.io/badge/MCP-6D28D9?style=flat-square" alt="MCP">
+  <img src="https://img.shields.io/badge/Ollama-555555?style=flat-square&logo=ollama&logoColor=white" alt="Ollama">
+  <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="Jupyter">
+</p>
+<p>
+  <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL">
+  <img src="https://img.shields.io/badge/OpenSearch-005EB8?style=flat-square&logo=opensearch&logoColor=white" alt="OpenSearch">
+  <img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis">
+  <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker">
+  <img src="https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions">
+  <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" alt="Playwright">
+</p>
+
+<p align="center"><sub>My older projects, including the most-starred ones, are on the <a href="PROJECTS.md">projects page</a>.</sub></p>
