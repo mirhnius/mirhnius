@@ -19,6 +19,8 @@
 
 ## About me
 
+I'm an AI engineer with a winding path. I started in **electrical engineering** (controllers, signal processing, even a pipelined ARM CPU), moved into **neuroimaging research**, and now build AI systems in **fintech**. The thread through all of it: making sure the results can be trusted, whether they come from a brain scan, a control loop or a language model.
+
 - 🔬 First author of [*Numerical Uncertainty in Linear Registration: An Experimental Study*](https://arxiv.org/abs/2508.00781), on how floating-point noise changes the results of MRI registration tools
 - 🧠 Google Summer of Code 2026 with [INCF](https://www.incf.org/), building [QC-Studio](https://github.com/nipoppy/qc-studio)
 - 🤖 Exploring production RAG, agentic workflows, and how to test and secure coding agents
