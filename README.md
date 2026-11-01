@@ -1,5 +1,7 @@
+<h1 align="center">Hi, I'm Niusha 👋</h1>
+
 <p align="center">
-  <img src="assets/banner.svg" alt="Niusha Mirhakimi, ML/AI engineer" width="100%">
+  <b>AI/ML engineer</b> with a background in <b>neuroimaging</b> and <b>electrical engineering</b>
 </p>
 
 <p align="center">
@@ -51,10 +53,12 @@
 <!-- starred:start -->
 ## Starred projects
 
-- **[Control-Magnetic-Levitation-System](https://github.com/mirhnius/Control-Magnetic-Levitation-System)** · ⭐ 8<br>PID stabilization and tracking control of a magnetic levitation ball, in MATLAB Simulink.
-- **[Control-Position-Velocity-DC-Motor](https://github.com/mirhnius/Control-Position-Velocity-DC-Motor)** · ⭐ 3<br>Position and velocity control of a DC motor with PID controllers, in MATLAB Simulink.
-- **[OpenmanipulatorX-Robot](https://github.com/mirhnius/OpenmanipulatorX-Robot)** · ⭐ 2<br>Tracking control analysis of the OpenManipulator-X robot arm, in MATLAB.
-- **[Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation)** · ⭐ 1<br>Simulation and position tracking control of a two-degree-of-freedom robot arm, in Simulink.
+| Project | Stars |
+|---|---|
+| [Control-Magnetic-Levitation-System](https://github.com/mirhnius/Control-Magnetic-Levitation-System): PID stabilization and tracking control of a magnetic levitation ball, in MATLAB Simulink. | ![stars](https://img.shields.io/github/stars/mirhnius/Control-Magnetic-Levitation-System?style=social) |
+| [Control-Position-Velocity-DC-Motor](https://github.com/mirhnius/Control-Position-Velocity-DC-Motor): Position and velocity control of a DC motor with PID controllers, in MATLAB Simulink. | ![stars](https://img.shields.io/github/stars/mirhnius/Control-Position-Velocity-DC-Motor?style=social) |
+| [OpenmanipulatorX-Robot](https://github.com/mirhnius/OpenmanipulatorX-Robot): Tracking control analysis of the OpenManipulator-X robot arm, in MATLAB. | ![stars](https://img.shields.io/github/stars/mirhnius/OpenmanipulatorX-Robot?style=social) |
+| [Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation): Simulation and position tracking control of a two-degree-of-freedom robot arm, in Simulink. | ![stars](https://img.shields.io/github/stars/mirhnius/Robotic-Arm-Simulation?style=social) |
 <!-- starred:end -->
 
 <p align="center"><sub>More of my projects are on the <a href="PROJECTS.md">projects page</a>.</sub></p>

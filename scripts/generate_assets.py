@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Regenerate the profile's SVG banner, stats strip and PROJECTS.md.
+"""Regenerate the profile's SVG stats strip, README star table and PROJECTS.md.
 
 Needs the GitHub CLI (`gh`) to be logged in. Run from anywhere:
 
@@ -9,8 +9,6 @@ Everything is drawn locally, so the profile never depends on a third-party
 image service. The numbers are baked in; re-run to refresh them.
 """
 import json
-import math
-import random
 import re
 import subprocess
 from pathlib import Path
@@ -81,50 +79,6 @@ def write(path, text):
     path.write_text(text, encoding="utf-8")
 
 
-def banner():
-    w, h = 1000, 260
-    rng = random.Random(11)
-    pts = []
-    while len(pts) < 36:
-        x, y = rng.uniform(570, 965), rng.uniform(22, 238)
-        if all((x - px) ** 2 + (y - py) ** 2 > 46 ** 2 for px, py in pts):
-            pts.append((x, y))
-    parts = []
-    for i, (x1, y1) in enumerate(pts):
-        for x2, y2 in pts[i + 1:]:
-            d = math.hypot(x1 - x2, y1 - y2)
-            if d < 110:
-                parts.append(
-                    f'<line x1="{x1:.0f}" y1="{y1:.0f}" x2="{x2:.0f}" y2="{y2:.0f}" '
-                    f'stroke="#f5d0fe" stroke-opacity="{0.38 - d / 400:.2f}" stroke-width="1.2"/>')
-    for i, (x, y) in enumerate(pts):
-        pink = i % 6 == 0
-        parts.append(
-            f'<circle cx="{x:.0f}" cy="{y:.0f}" r="{rng.uniform(2.6, 5.4):.1f}" '
-            f'fill="{"#f9a8d4" if pink else "#ffffff"}" fill-opacity="{0.9 if pink else 0.7}"/>')
-    net = "\n  ".join(parts)
-    return f'''<svg xmlns="http://www.w3.org/2000/svg" width="{w}" height="{h}" viewBox="0 0 {w} {h}" role="img" aria-label="Niusha Mirhakimi, ML/AI engineer">
-  <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#1e1b4b"/>
-      <stop offset="0.55" stop-color="#5b21b6"/>
-      <stop offset="1" stop-color="#be185d"/>
-    </linearGradient>
-    <radialGradient id="glow" cx="0.82" cy="0.45" r="0.55">
-      <stop offset="0" stop-color="#f0abfc" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#f0abfc" stop-opacity="0"/>
-    </radialGradient>
-  </defs>
-  <rect width="{w}" height="{h}" rx="18" fill="url(#bg)"/>
-  <rect width="{w}" height="{h}" rx="18" fill="url(#glow)"/>
-  {net}
-  <text x="56" y="118" font-family="{FONT}" font-size="50" font-weight="700" fill="#ffffff">Niusha Mirhakimi</text>
-  <text x="58" y="162" font-family="{FONT}" font-size="23" font-weight="500" fill="#f5d0fe">ML/AI Engineer</text>
-  <text x="58" y="200" font-family="{FONT}" font-size="16" fill="#e9d5ff">Neuroimaging  ·  Reproducible research  ·  LLM agents</text>
-</svg>
-'''
-
-
 def stats_strip(n_repos, n_stars, n_prs, n_pr_repos):
     tiles = [
         (str(n_repos), "original public repos"),
@@ -172,10 +126,12 @@ def projects_page(originals):
 
 
 def starred_section(by_name):
-    lines = ["<!-- starred:start -->", "## Starred projects", ""]
+    lines = ["<!-- starred:start -->", "## Starred projects", "",
+             "| Project | Stars |", "|---|---|"]
     for name, blurb in STARRED:
         r = by_name[name]
-        lines.append(f"- **[{name}]({r['url']})** · ⭐ {r['stargazerCount']}<br>{blurb}")
+        badge = f"![stars](https://img.shields.io/github/stars/{USER}/{name}?style=social)"
+        lines.append(f"| [{name}]({r['url']}): {blurb} | {badge} |")
     lines.append("<!-- starred:end -->")
     return "\n".join(lines)
 
@@ -199,7 +155,6 @@ def main():
     other = [p["repository"]["nameWithOwner"] for p in prs
              if not p["repository"]["nameWithOwner"].startswith(f"{USER}/")]
 
-    write(ASSETS / "banner.svg", banner())
     write(ASSETS / "stats.svg", stats_strip(len(originals), n_stars, len(other), len(set(other))))
     write(ROOT / "PROJECTS.md", projects_page(originals))
     update_readme({r["name"]: r for r in originals})
