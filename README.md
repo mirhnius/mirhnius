@@ -19,7 +19,7 @@
 
 ## About me
 
-I'm an AI engineer with a winding path. I started in **electrical engineering** (controllers, signal processing, even a pipelined ARM CPU), moved into **neuroimaging research**, and now build AI systems in **fintech**. Along the way I've worked across data science, ML engineering, AI engineering and testing, with technical and non-technical people alike.
+I'm an AI engineer with a winding path. I started in **electrical engineering** with a focus on **control engineering**, moved into **neuroimaging research**, and now build AI systems in **fintech**. Along the way I've worked across data science, ML engineering, AI engineering and testing, with technical and non-technical people alike.
 
 What I care about most is the engineering side of machine learning: **reliable, reproducible models in production**, and end-to-end solutions that people can actually use and trust, whether the results come from a brain scan, a control loop or a language model.
 
