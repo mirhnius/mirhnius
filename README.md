@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/banner.svg" alt="Niusha Mirhakimi, AI/ML engineer with a background in neuroimaging and electrical engineering" width="100%">
+  <img src="assets/header.svg" alt="Niusha Mirhakimi, AI/ML engineer with a background in neuroimaging and electrical engineering" width="100%">
 </p>
 
 <p align="center">

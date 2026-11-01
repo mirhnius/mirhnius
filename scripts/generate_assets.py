@@ -203,7 +203,7 @@ def main():
     other = [p["repository"]["nameWithOwner"] for p in prs
              if not p["repository"]["nameWithOwner"].startswith(f"{USER}/")]
 
-    write(ASSETS / "banner.svg", banner())
+    write(ASSETS / "header.svg", banner())
     write(ASSETS / "stats.svg",stats_strip(len(originals), n_stars, len(other), len(set(other))))
     write(ROOT / "PROJECTS.md", projects_page(originals))
     update_readme({r["name"]: r for r in originals})
