@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  I build AI systems that are grounded, testable and safe to rely on: a quality-control tool for brain MRI,<br>
+  I build AI systems that are grounded, testable and safe to rely on: a quality-control tool for brain MRI,
   a RAG pipeline that cites its sources, an agent that can't make up a number.
 </p>
 
