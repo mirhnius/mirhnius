@@ -11,6 +11,7 @@ image service. The numbers are baked in; re-run to refresh them.
 import json
 import math
 import random
+import re
 import subprocess
 from pathlib import Path
 from xml.sax.saxutils import escape
@@ -23,11 +24,20 @@ FONT = "-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-se
 CARD_BG, CARD_BORDER = "#16131f", "#3a2f55"
 TITLE, TEXT = "#f0abfc", "#cfc9e0"
 
+# Most-starred repos, shown in their own README section: (repo, one-liner).
+STARRED = [
+    ("Control-Magnetic-Levitation-System",
+     "PID stabilization and tracking control of a magnetic levitation ball, in MATLAB Simulink."),
+    ("Control-Position-Velocity-DC-Motor",
+     "Position and velocity control of a DC motor with PID controllers, in MATLAB Simulink."),
+    ("OpenmanipulatorX-Robot",
+     "Tracking control analysis of the OpenManipulator-X robot arm, in MATLAB."),
+    ("Robotic-Arm-Simulation",
+     "Simulation and position tracking control of a two-degree-of-freedom robot arm, in Simulink."),
+]
+
 # PROJECTS.md sections, in order. Any original repo not listed lands in "Other".
 GROUPS = {
-    "Most starred": [
-        "Control-Magnetic-Levitation-System", "Control-Position-Velocity-DC-Motor",
-        "OpenmanipulatorX-Robot", "Robotic-Arm-Simulation"],
     "Recent work": [
         "practice_rag_production", "budget-buddy", "agentic_coding",
         "mca_linear_registration", "gsoc-qc-studio-report"],
@@ -42,7 +52,7 @@ GROUPS = {
         "Operation-Research", "Optimization-Electricity-Dispatching",
         "Forecasting-Covid-19-Cases-Dynamic-Model", "Ensemble-Classification",
         "Pyhton-Introduction-Tutorial-Class"],
-    "Control and robotics": [
+    "Control and robotics": [n for n, _ in STARRED] + [
         "Control-Ball-and-Beam-System", "Robotic-Finger-Gesture-Emulation"],
     "Software and embedded": [
         "Local-Messenger", "Pacman-Game", "Restaurant-Orders-Management-App",
@@ -161,6 +171,26 @@ def projects_page(originals):
     return "\n".join(out)
 
 
+def starred_section(by_name):
+    lines = ["<!-- starred:start -->", "## Control systems and robotics", "",
+             "My earlier work was in control systems and robotics, in MATLAB and Simulink. "
+             "These are my most-starred repositories.", ""]
+    for name, blurb in STARRED:
+        r = by_name[name]
+        lines.append(f"- **[{name}]({r['url']})** · ⭐ {r['stargazerCount']}<br>{blurb}")
+    lines.append("<!-- starred:end -->")
+    return "\n".join(lines)
+
+
+def update_readme(by_name):
+    path = ROOT / "README.md"
+    text = path.read_text(encoding="utf-8")
+    pattern = re.compile(r"<!-- starred:start -->.*?<!-- starred:end -->", re.S)
+    if not pattern.search(text):
+        raise SystemExit("README.md is missing the <!-- starred:start/end --> markers")
+    path.write_text(pattern.sub(lambda _: starred_section(by_name), text), encoding="utf-8")
+
+
 def main():
     repos = gh("repo", "list", USER, "--limit", "200", "--source", "--no-archived",
                "--visibility", "public", "--json", "name,description,stargazerCount,primaryLanguage,url")
@@ -174,6 +204,7 @@ def main():
     write(ASSETS / "banner.svg", banner())
     write(ASSETS / "stats.svg", stats_strip(len(originals), n_stars, len(other), len(set(other))))
     write(ROOT / "PROJECTS.md", projects_page(originals))
+    update_readme({r["name"]: r for r in originals})
     print(f"{len(originals)} original repos, {n_stars} stars, {len(other)} merged PRs in {len(set(other))} projects")
 
 

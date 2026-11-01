@@ -4,15 +4,6 @@
 
 All of my original public repositories, grouped by topic. Most of the older ones are from 2021 and earlier, built in MATLAB, Python, C and C++.
 
-## Most starred
-
-| Repository | Language | Stars | About |
-|---|---|---|---|
-| [Control-Magnetic-Levitation-System](https://github.com/mirhnius/Control-Magnetic-Levitation-System) | MATLAB | 8 | Stabilization and Tracking Control of The Ball Magnetic Levitation Systems for Robotic Motion using PID Controllers in MATLAB SIMULINK. |
-| [Control-Position-Velocity-DC-Motor](https://github.com/mirhnius/Control-Position-Velocity-DC-Motor) | MATLAB | 3 | Implementation and Simulation of DC motor position and velocity control system using PID controllers, MATLAB and SIMULINK. |
-| [OpenmanipulatorX-Robot](https://github.com/mirhnius/OpenmanipulatorX-Robot) | MATLAB | 2 | Analysis of Tracking Control of Openmanipulator-X Robot in MATLAB. |
-| [Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation) | MATLAB | 1 | Simulation and Tracking Position Control of a Two Degrees Freedom Arm Robot in Simulink |
-
 ## Recent work
 
 | Repository | Language | Stars | About |
@@ -61,6 +52,10 @@ All of my original public repositories, grouped by topic. Most of the older ones
 
 | Repository | Language | Stars | About |
 |---|---|---|---|
+| [Control-Magnetic-Levitation-System](https://github.com/mirhnius/Control-Magnetic-Levitation-System) | MATLAB | 8 | Stabilization and Tracking Control of The Ball Magnetic Levitation Systems for Robotic Motion using PID Controllers in MATLAB SIMULINK. |
+| [Control-Position-Velocity-DC-Motor](https://github.com/mirhnius/Control-Position-Velocity-DC-Motor) | MATLAB | 3 | Implementation and Simulation of DC motor position and velocity control system using PID controllers, MATLAB and SIMULINK. |
+| [OpenmanipulatorX-Robot](https://github.com/mirhnius/OpenmanipulatorX-Robot) | MATLAB | 2 | Analysis of Tracking Control of Openmanipulator-X Robot in MATLAB. |
+| [Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation) | MATLAB | 1 | Simulation and Tracking Position Control of a Two Degrees Freedom Arm Robot in Simulink |
 | [Control-Ball-and-Beam-System](https://github.com/mirhnius/Control-Ball-and-Beam-System) | MATLAB |  | Stabilization and Tracking Control of The Ball and Beam using PID Controllers in MATLAB SIMULINK. |
 | [Robotic-Finger-Gesture-Emulation](https://github.com/mirhnius/Robotic-Finger-Gesture-Emulation) | Python |  | Simulation of A Smart Real-Time Gesture Emulation Controlled Finger-Robot using Image Processing in SolidWorks and MATLAB. |
 

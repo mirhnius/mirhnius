@@ -23,6 +23,17 @@
 - 🧠 Google Summer of Code 2026 with [INCF](https://www.incf.org/), building [QC-Studio](https://github.com/nipoppy/qc-studio)
 - 🤖 Exploring production RAG, agentic workflows, and how to test and secure coding agents
 
+<!-- starred:start -->
+## Control systems and robotics
+
+My earlier work was in control systems and robotics, in MATLAB and Simulink. These are my most-starred repositories.
+
+- **[Control-Magnetic-Levitation-System](https://github.com/mirhnius/Control-Magnetic-Levitation-System)** · ⭐ 8<br>PID stabilization and tracking control of a magnetic levitation ball, in MATLAB Simulink.
+- **[Control-Position-Velocity-DC-Motor](https://github.com/mirhnius/Control-Position-Velocity-DC-Motor)** · ⭐ 3<br>Position and velocity control of a DC motor with PID controllers, in MATLAB Simulink.
+- **[OpenmanipulatorX-Robot](https://github.com/mirhnius/OpenmanipulatorX-Robot)** · ⭐ 2<br>Tracking control analysis of the OpenManipulator-X robot arm, in MATLAB.
+- **[Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation)** · ⭐ 1<br>Simulation and position tracking control of a two-degree-of-freedom robot arm, in Simulink.
+<!-- starred:end -->
+
 ## Toolbox
 
 <p>
@@ -48,4 +59,4 @@
   <img src="https://img.shields.io/badge/Playwright-2EAD33?style=flat-square" alt="Playwright">
 </p>
 
-<p align="center"><sub>My older projects, including the most-starred ones, are on the <a href="PROJECTS.md">projects page</a>.</sub></p>
+<p align="center"><sub>More of my projects are on the <a href="PROJECTS.md">projects page</a>.</sub></p>
