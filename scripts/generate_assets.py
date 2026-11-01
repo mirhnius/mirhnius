@@ -127,10 +127,10 @@ def banner():
 '''
 
 
-def stats_strip(n_repos, n_stars, n_prs, n_pr_repos):
+def stats_strip(n_repos, n_prs, n_pr_repos):
     tiles = [
         (str(n_repos), "original public repos"),
-        (str(n_stars), "stars earned"),
+        ("1", "first-author paper"),
         (str(n_prs), f"merged PRs in {n_pr_repos} other projects"),
         ("GSoC '26", "INCF  ·  QC-Studio"),
     ]
@@ -204,7 +204,7 @@ def main():
              if not p["repository"]["nameWithOwner"].startswith(f"{USER}/")]
 
     write(ASSETS / "header.svg", banner())
-    write(ASSETS / "stats.svg",stats_strip(len(originals), n_stars, len(other), len(set(other))))
+    write(ASSETS / "overview.svg", stats_strip(len(originals), len(other), len(set(other))))
     write(ROOT / "PROJECTS.md", projects_page(originals))
     update_readme({r["name"]: r for r in originals})
     print(f"{len(originals)} original repos, {n_stars} stars, {len(other)} merged PRs in {len(set(other))} projects")

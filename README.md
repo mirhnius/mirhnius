@@ -3,8 +3,7 @@
 </p>
 
 <p align="center">
-  I make ML and AI systems you can rely on, from a quality-control tool for brain MRI to a RAG pipeline that cites its sources:
-  reproducible, tested, and built end to end.
+  <b>From control loops to brain scans to fintech: I make ML systems that hold up in production.</b>
 </p>
 
 <p align="center">
@@ -14,7 +13,7 @@
 </p>
 
 <p align="center">
-  <img src="assets/stats.svg" alt="37 original repos, 14 stars, 13 merged PRs in 5 other projects, GSoC 2026" width="100%">
+  <img src="assets/overview.svg" alt="37 original repos, 1 first-author paper, 13 merged PRs in 5 other projects, GSoC 2026" width="100%">
 </p>
 
 ## About me
@@ -24,7 +23,7 @@ I'm an AI engineer with a winding path. I started in **electrical engineering** 
 What I care about most is the engineering side of machine learning: **reliable, reproducible models in production**, and end-to-end solutions that people can actually use and trust, whether the results come from a brain scan, a control loop or a language model.
 
 - 🔬 First author of [*Numerical Uncertainty in Linear Registration: An Experimental Study*](https://arxiv.org/abs/2508.00781), on how floating-point noise changes the results of MRI registration tools
-- 🧠 Google Summer of Code 2026 with [INCF](https://www.incf.org/), building [QC-Studio](https://github.com/nipoppy/qc-studio)
+- 🧠 Google Summer of Code 2026 with [INCF](https://www.incf.org/): helped take [QC-Studio](https://github.com/nipoppy/qc-studio), a quality-control app for neuroimaging data, from an early prototype to a tool used on a real dataset by people who weren't its developers
 - 🤖 Exploring production RAG, agentic workflows, and how to test and secure coding agents
 
 ## Toolbox
