@@ -1,7 +1,5 @@
-<h1 align="center">Hi, I'm Niusha 👋</h1>
-
 <p align="center">
-  <b>AI/ML engineer</b> with a background in <b>neuroimaging</b> and <b>electrical engineering</b>
+  <img src="assets/banner.svg" alt="Niusha Mirhakimi, AI/ML engineer with a background in neuroimaging and electrical engineering" width="100%">
 </p>
 
 <p align="center">
