@@ -62,4 +62,10 @@ What I care about most is the engineering side of machine learning: **reliable, 
 | [Robotic-Arm-Simulation](https://github.com/mirhnius/Robotic-Arm-Simulation): Simulation and position tracking control of a two-degree-of-freedom robot arm, in Simulink. | ![stars](https://img.shields.io/github/stars/mirhnius/Robotic-Arm-Simulation?style=social) |
 <!-- starred:end -->
 
+## Find me
+
+<p>
+  <a href="https://www.linkedin.com/in/niusha-mirhakimi/"><img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+</p>
+
 <p align="center"><sub>More of my projects are on the <a href="PROJECTS.md">projects page</a>.</sub></p>
